@@ -94,13 +94,17 @@ void setup() {
   Serial.println("WiFi connected");
 
   startCameraServer();
-
-  Serial.print("Camera Ready! Use 'http://");
+  
+  Serial.println("");
+  Serial.print("Camera Ready!");
+  Serial.print(" Use 'http://")
   Serial.print(WiFi.localIP());
   Serial.println("' to connect");
+  Serial.println("");
+  
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-  delay(10000);
+  delay(100000);
 }
